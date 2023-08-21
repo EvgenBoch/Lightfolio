@@ -1,0 +1,133 @@
+.experience {
+    padding: 264px 0;
+
+    @include mediaTablet {
+        padding: 100px 0;
+    }
+
+    @include mediaMobile {
+        padding: 60px 0;
+    }
+}
+
+.experience__columns {
+    display: flex;
+
+    @include mediaTablet {
+        flex-direction: column;
+    }
+}
+
+.experience__column:last-child {
+    margin-left: 494px;
+    width: 100%;
+
+    @include mediaTablet {
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+}
+
+.experience__title {
+
+    @include mediaTablet {
+        text-align: center;
+        font-size: 24px;
+
+        margin-bottom: 40px;
+    }
+
+    @include mediaMobile {
+        margin-bottom: 30px;
+    }
+}
+
+.experience__item {
+    position: relative;
+
+    padding-bottom: 49px;
+    margin-bottom: 47px;
+
+    @include mediaTablet {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    @include mediaMobile {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.experience__item:last-child::before {
+    display: none;
+}
+
+.experience__item::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+
+.experience__subtitle {
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4444;
+    letter-spacing: 0.6px;
+
+    @include mediaTablet {
+        font-size: 18px;
+    }
+
+    @include mediaMobile {
+        font-size: 16px;
+    }
+}
+
+.experience__name {
+    margin-bottom: 16px;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5294;
+    letter-spacing: 0.6px;
+    color: $subtitle;
+
+    @include mediaTablet {
+        margin-bottom: 12px;
+
+        font-size: 16px;
+    }
+
+    @include mediaMobile {
+        margin-bottom: 8px;
+
+        font-size: 14px;
+    }
+}
+
+.experience__date {
+    color: $grey;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5789;
+
+    @include mediaTablet {
+        font-size: 18px;
+    }
+
+    @include mediaMobile {
+        font-size: 16px;
+    }
+}

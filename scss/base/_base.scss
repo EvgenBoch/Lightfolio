@@ -1,0 +1,23 @@
+body {
+    background-color: $body-bg;
+    color: $dark;
+    font-family: $font-main;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1248px + 30px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title-2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3866;
+    letter-spacing: 0.64px;
+}
+
+.none {
+    display: none;
+}

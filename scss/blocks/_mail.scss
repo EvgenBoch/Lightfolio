@@ -1,0 +1,92 @@
+.mail {
+    margin: 256px 0;
+
+    border-radius: 20px;
+    background: #FFEBD8;
+
+    @include mediaTablet {
+        margin: 100px 0;
+    }
+
+    @include mediaMobile {
+        margin: 70px 0;
+
+        border-radius: 10px;
+    }
+}
+
+.mail__text {
+    position: relative;
+    padding: 126px 0;
+
+    text-align: center;
+    align-items: center;
+
+    @include mediaTablet {
+        padding: 80px 0;
+    }
+
+    @include mediaMobile {
+        padding: 50px 0;
+    }
+}
+
+.mail__title {
+    padding-bottom: 64px;
+
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 1.2912;
+    letter-spacing: 2.56px;
+
+    @include mediaTablet {
+        padding-bottom: 50px;
+
+        font-size: 36px;
+    }
+
+    @include mediaMobile {
+        padding-bottom: 35px;
+
+        font-size: 30px;
+    }
+}
+
+.mail__link {
+    position: relative;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 1.4054;
+    letter-spacing: 1.2px;
+
+    transition: all .2s ease-in;
+
+    &:hover {
+        cursor: pointer;
+        color: $grey;
+
+        span {
+            left: -50px;
+        }
+    }
+
+    @include mediaTablet {
+        font-size: 24px;
+    }
+
+    @include mediaMobile {
+        font-size: 20px;
+    }
+}
+
+.mail__link span {
+    position: absolute;
+    left: -60px;
+    bottom: -2px;
+
+    transition: all .2s ease-in;
+
+    @include mediaTablet {
+        position: static;
+    }
+}

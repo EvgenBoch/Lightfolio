@@ -1,0 +1,58 @@
+.about {
+    margin-top: 280px;
+    margin-bottom: 260px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mediaTablet {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        flex-direction: column;
+    }
+}
+
+.about__title {
+    display: inline;
+
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3866;
+    letter-spacing: 0.64px;
+
+    @include mediaTablet {
+        margin-bottom: 40px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    @include mediaMobile {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.about__text {
+    max-width: 588px;
+
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 0.28px;
+
+    p + p {
+        margin-top: 1.5em;
+    }
+
+    @include mediaTablet {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    @include mediaMobile {
+        font-size: 18px;
+
+        p + p {
+            margin-top: 1em;
+        }
+    }
+}
